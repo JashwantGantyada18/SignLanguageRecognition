@@ -138,7 +138,7 @@ class Application:
                 x, y, w, h = hand['bbox']
                 image = cv2image_copy[y - offset:y + h + offset, x - offset:x + w + offset]
 
-                white = cv2.imread("C:\\Users\\dell\\Desktop\\Sign-Language-To-Text-and-Speech-Conversion\\white.jpg")
+                white = cv2.imread("C:\\Users\\dell\\Desktop\\Sign-Language-To-Text-and-Speech-Conversion\\white.jpg")  //make the necessaary changes wjile adding the database path here!!!!
 
                 handz = hd2.findHands(image, draw=False, flipType=True)
                 print(" ", self.ccc)
